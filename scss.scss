@@ -1,0 +1,349 @@
+$width: 250px;  
+$sprite_w:0;
+$color_main: #f5f5f5;  
+
+@font-face {
+    font-family: roboto;
+    src: url('../fonts/Roboto-Light.ttf');
+}
+a{
+	color:#fff;
+	text-decoration: none;
+}
+a:hover{
+	background-color:transparent;
+	text-decoration: none;
+	color:#fff;
+	border: solid 1px #fff;
+}
+@font-face {
+    font-family: gilroy;
+    src: url('../fonts/Gilroy-ExtraBold.otf');
+}
+body{
+	background-color:#fff;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color:#000;
+	font-size: 12px;
+	line-height: 20px;
+	width: 100%;
+}
+#main{
+	background: url('../images/main-bg.jpg');
+	background-size: cover;
+	padding-right: 0px;
+    padding-left: 0px;
+}  
+#img-bg{
+	width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#logo{
+	display:block;
+	font-family:gilroy;
+	font-size:xx-large;
+	color:#fff;
+	padding-left:100px;
+	padding-top:50px;
+}
+#logo>a:hover{
+	background-color:transparent;
+	text-decoration: none;
+	color:#fff;
+	border: none;
+}
+#menu{
+	font-family: roboto;
+	color: #fff;
+	padding-top:50px;
+}
+
+#main-content{
+    font-family: gilroy;
+    font-size: 65px;
+    color: #fff;
+    line-height: 60px;
+    padding-left: 100px;
+    padding-top: 135px;
+}
+#main-content-description{
+    font-family: roboto;
+    font-size: 23px;
+    color: #fff;
+	padding-left: 20px;
+	padding-bottom: 190px;
+    line-height: normal;
+}
+#main-content-bottom{
+    font-family: roboto;
+    font-size: 16px;
+	text-align:center;
+	color: #969393;
+	padding-left: 0px;
+	padding-top: 50px;
+    line-height: normal;
+}
+
+#what-we-do{
+	background-color:#fff;
+	
+}
+#wwd-item{
+min-height:300px;
+}
+#wwd-caption{
+	font-family:gilroy;
+	font-size:30px;
+	text-align:center;
+	padding-top:50px;
+	padding-bottom:50px;
+}
+@for $i from 1 to 6 {
+ #image-#{$i}{
+ 	background:url('../images/wwd-sprite.png') $sprite_w 0;
+	height: 70px;
+	width:90px;
+	$sprite_w:$sprite_w - 80px;
+}
+}
+#caption{
+	padding-top:20px;
+	font-size:16px;
+}
+#description{
+	padding-top:20px;
+	padding-bottom:20px;
+	font-size:11px;
+}
+#gazprom{
+	background-color:#bdcbd7;
+}
+#gp-info-caption{
+	font-family:gilroy;
+	font-size:25px;
+	line-height:60px;
+	color:#000;
+	padding-top: 14%;
+	padding-bottom: 30%;
+
+}
+#gp-info-desc{
+    font-family:roboto;
+	font-size:14px;
+	color:#000; 
+}
+#gp-info-button{
+    font-family:roboto;
+	font-size:18px;
+	color:#000; 
+	border:2px solid #000;
+}
+#gp-info-button:hover{
+    font-family:roboto;
+	font-size:18px;
+	color:#FFF;
+	background-color:#000;
+	border:2px solid #000;
+}
+#tinkoff{
+	background-color:#f7cf00;
+	margin-top:-150px;
+}
+#tf-info-caption{
+	font-family:gilroy;
+	font-size:25px;
+	line-height:30px;
+	color:#000;
+	padding-top: 10%;
+}
+#tf-info-desc{
+    font-family:roboto;
+	font-size:14px;
+	color:#000; 
+}
+#tf-info-button{
+    font-family:roboto;
+	font-size:18px;
+	color:#000; 
+	border:2px solid #000;
+}
+#tf-info-button:hover{
+    font-family:roboto;
+	font-size:18px;
+	color:#FFF;
+	background-color:#000;
+	border:2px solid #000;
+}
+#adidas{
+	background-color:#fff;
+	margin-top: -9%;
+}
+#ad-info-caption{
+	font-family:gilroy;
+	font-size:25px;
+	line-height:40px;
+	color:#000;
+	padding-top: 14%;
+	padding-bottom: 5%;
+}
+#ad-info-desc{
+    font-family:roboto;
+	font-size:14px;
+	color:#000; 
+}
+#ad-info-button{
+    font-family:roboto;
+	font-size:18px;
+	color:#000; 
+	border:2px solid #000;
+}
+#ad-info-button:hover{
+    font-family:roboto;
+	font-size:18px;
+	color:#FFF;
+	background-color:#000;
+	border:2px solid #000;
+}
+#all{
+	background: url('../images/all.png') top no-repeat;
+	background-size:cover;
+	min-height:120px;
+}
+#all-info-button{
+    font-family:roboto;
+	font-size:18px;
+	margin-top:50px;
+	color:#fff; 
+	border:2px solid #fff;
+}
+#all-info-button:hover{
+    font-family:roboto;
+	font-size:18px;
+	color:#FFF;
+	background-color:#000;
+	border:2px solid #000;
+}
+#benefits{
+	background-color:#f1f2f2;
+	z-index:-2;
+}
+#benefits-caption{
+	background: url('../images/six.png') top no-repeat;
+	background-size:contain;
+	min-height: 175px;
+	z-index:-1;
+}
+#benefits-text{
+    font-size: xx-large;
+    font-family: gilroy;
+    text-align:left;
+}
+#benefits-item{
+	min-height: 200px;
+    margin-top: 60px;
+}
+#benefits-item-caption{
+    font-size: medium;
+    font-family: roboto;
+    text-align:left;
+	font-weight: bold;
+}
+#benefits-item-description{
+    font-size: small;
+    font-family: roboto;
+}
+hr{
+    border-top: 3px solid #e74c3c;
+    margin-top: 10px;
+}
+#clients-caption{
+    font-size: x-large;
+    font-family: gilroy;
+    text-align:center;
+	margin-top:100px;
+}
+#speach-text{
+    font-size: large;
+    font-family: roboto;
+    text-align:center;
+	margin-top:100px;
+	margin-bottom:100px;
+}
+#play-button{
+	z-index:2;
+	position:absolute;
+	opacity:0.5;
+}
+
+#play-button:hover{
+	opacity:1;
+}
+#review{
+	margin-top:100px;
+}
+#review-video-text{
+	 font-size: large;
+    font-family: roboto;
+    text-align:center;
+	color:#fff;
+	z-index:2;
+	position: absolute;
+    top: 66%;
+    left: 0%;
+}
+#review-text{
+    position: relative;
+    top: 50%;
+    transform: translateY(100%);
+}
+#review-text-caption{
+	font-weight: bold;
+	margin-bottom:30px;
+}
+#review-right{
+	opacity:0.1;
+}
+
+#review-right:hover{
+	opacity:1;
+}
+#footer{
+	background:url('../images/footer.png') top no-repeat;
+	background-size:cover;
+}
+#footer-text{
+	
+	font-size: xx-large;
+    font-family: gilroy;
+    text-align:center;
+	color:#fff;
+	z-index:2;
+    margin-top: 10%;
+}
+#footer-mail{
+	
+	font-size: medium;
+    font-family: gilroy;
+    text-align:center;
+	color:#fff;
+	z-index:2;
+    margin-top: 10%;
+}
+#footer-phone{
+	
+	font-size: xx-large;
+    font-family: gilroy;
+    text-align:center;
+	color:#fff;
+	z-index:2;
+    margin-top: 10%;
+	 margin-bottom: 10%;
+}
+#footer-social{
+background-color:#222222;
+padding-bottom:50px;
+padding-top:50px; 
+}
