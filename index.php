@@ -121,7 +121,7 @@ include 'en.php';
 </div>
 
 <div class="col-xs-12 col-sm-12 col-md-12" id="gazprom">
-<div class="col-xs-12 col-sm-12 col-md-7" style="margin-left: -30px; margin-top: 50px; margin-right: 30px; z-index: 2;">
+<div class="col-xs-12 col-sm-12 col-md-7" style="margin-left: -30px; margin-bottom: -150px; margin-right: 30px; z-index: 2;">
 <img src="http://testhotel.kara-yazilim.com/images/gazpromsite.png" class="img-responsive"></img>
 </div>
 <div class="col-xs-12 col-sm-12 col-md-3" id="gp-info-caption">

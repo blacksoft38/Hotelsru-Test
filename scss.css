@@ -158,8 +158,8 @@ body {
   font-size: 25px;
   line-height: 60px;
   color: #000;
-  padding-top: 14%;
-  padding-bottom: 30%;
+  padding-top: 5%;
+  z-index: 3;
 }
 
 #gp-info-desc {
@@ -185,7 +185,6 @@ body {
 
 #tinkoff {
   background-color: #f7cf00;
-  margin-top: -150px;
 }
 
 #tf-info-caption {
